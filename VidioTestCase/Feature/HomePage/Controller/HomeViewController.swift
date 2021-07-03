@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    static let topHeaderId = "topHeaderID"
 
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
@@ -23,6 +25,7 @@ class HomeViewController: UIViewController {
         homeCollectionView.collectionViewLayout = createLayout()
         
         homeCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        homeCollectionView.register(CollectionSectionHeader.self, forSupplementaryViewOfKind: HomeViewController.topHeaderId, withReuseIdentifier: CollectionSectionHeader.identifier)
     }
 }
 
@@ -42,6 +45,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         defaultCell.layer.cornerRadius = 8
         
         return defaultCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionSectionHeader.identifier, for: indexPath) as! CollectionSectionHeader
+        
+        if indexPath.section == 0 {
+            header.textLabel.text = "Top Picks For You"
+        } else {
+            header.textLabel.text = "Ghibli Studio Original"
+        }
+        
+        return header
     }
 }
 
@@ -73,6 +88,17 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                 let section = NSCollectionLayoutSection(group: group)
                 section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20)
                 section.orthogonalScrollingBehavior = .groupPaging
+                section.boundarySupplementaryItems = [
+                    .init(
+                        layoutSize: .init(
+                            widthDimension: .fractionalWidth(1),
+                            heightDimension: .absolute(50)
+                        ),
+                        elementKind: HomeViewController.topHeaderId,
+                        alignment: .topLeading
+                    )
+                ]
+                
                 return section
             }
             else if section == 1 {
@@ -99,6 +125,17 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                 // section
                 let section = NSCollectionLayoutSection(group: group)
                 section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20)
+                section.boundarySupplementaryItems = [
+                    .init(
+                        layoutSize: .init(
+                            widthDimension: .fractionalWidth(1),
+                            heightDimension: .absolute(50)
+                        ),
+                        elementKind: HomeViewController.topHeaderId,
+                        alignment: .topLeading
+                    )
+                ]
+                
                 return section
             }
             

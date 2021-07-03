@@ -15,6 +15,7 @@
 		8628BC2C2690BD210055A5D6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8628BC2A2690BD210055A5D6 /* HomeViewController.xib */; };
 		8628BC2E2690BD4E0055A5D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC2D2690BD4E0055A5D6 /* HomeViewModel.swift */; };
 		8628BC312690BD820055A5D6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC302690BD820055A5D6 /* Video.swift */; };
+		8628BC372690DB170055A5D6 /* CollectionSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC362690DB170055A5D6 /* CollectionSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8628BC2A2690BD210055A5D6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		8628BC2D2690BD4E0055A5D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8628BC302690BD820055A5D6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8628BC362690DB170055A5D6 /* CollectionSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8628BC0E2690A56E0055A5D6 /* VidioTestCase */ = {
 			isa = PBXGroup;
 			children = (
+				8628BC322690DA1F0055A5D6 /* CustomViews */,
 				8628BC242690B8F70055A5D6 /* Feature */,
 				8628BC232690B8E50055A5D6 /* Util */,
 				8628BC0F2690A56E0055A5D6 /* AppDelegate.swift */,
@@ -127,6 +130,22 @@
 				8628BC302690BD820055A5D6 /* Video.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8628BC322690DA1F0055A5D6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8628BC332690DA260055A5D6 /* CollectionSectionHeader */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8628BC332690DA260055A5D6 /* CollectionSectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8628BC362690DB170055A5D6 /* CollectionSectionHeader.swift */,
+			);
+			path = CollectionSectionHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +220,7 @@
 			files = (
 				8628BC312690BD820055A5D6 /* Video.swift in Sources */,
 				8628BC102690A56E0055A5D6 /* AppDelegate.swift in Sources */,
+				8628BC372690DB170055A5D6 /* CollectionSectionHeader.swift in Sources */,
 				8628BC122690A56E0055A5D6 /* SceneDelegate.swift in Sources */,
 				8628BC2E2690BD4E0055A5D6 /* HomeViewModel.swift in Sources */,
 				8628BC2B2690BD210055A5D6 /* HomeViewController.swift in Sources */,
