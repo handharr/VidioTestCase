@@ -16,6 +16,8 @@
 		8628BC2E2690BD4E0055A5D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC2D2690BD4E0055A5D6 /* HomeViewModel.swift */; };
 		8628BC312690BD820055A5D6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC302690BD820055A5D6 /* Video.swift */; };
 		8628BC372690DB170055A5D6 /* CollectionSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8628BC362690DB170055A5D6 /* CollectionSectionHeader.swift */; };
+		86478BC52691FF2500BE6591 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86478BC32691FF2500BE6591 /* VideoCollectionViewCell.swift */; };
+		86478BC62691FF2500BE6591 /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86478BC42691FF2500BE6591 /* VideoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8628BC2D2690BD4E0055A5D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8628BC302690BD820055A5D6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8628BC362690DB170055A5D6 /* CollectionSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionHeader.swift; sourceTree = "<group>"; };
+		86478BC32691FF2500BE6591 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		86478BC42691FF2500BE6591 /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 		8628BC282690B9570055A5D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				86478BC32691FF2500BE6591 /* VideoCollectionViewCell.swift */,
+				86478BC42691FF2500BE6591 /* VideoCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			files = (
 				8628BC1C2690A56F0055A5D6 /* LaunchScreen.storyboard in Resources */,
 				8628BC192690A56F0055A5D6 /* Assets.xcassets in Resources */,
+				86478BC62691FF2500BE6591 /* VideoCollectionViewCell.xib in Resources */,
 				8628BC2C2690BD210055A5D6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86478BC52691FF2500BE6591 /* VideoCollectionViewCell.swift in Sources */,
 				8628BC312690BD820055A5D6 /* Video.swift in Sources */,
 				8628BC102690A56E0055A5D6 /* AppDelegate.swift in Sources */,
 				8628BC372690DB170055A5D6 /* CollectionSectionHeader.swift in Sources */,
