@@ -75,6 +75,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         return header
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let model = homeViewModel?.dataPublisher.value[indexPath.section][indexPath.row]  else {return}
+        
+        let vc = DetailVideoViewController()
+        vc.model = model
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
