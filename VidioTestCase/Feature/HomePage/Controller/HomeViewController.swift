@@ -11,7 +11,9 @@ import Combine
 class HomeViewController: UIViewController {
     
     static let topHeaderId = "topHeaderID"
+    
     @IBOutlet weak var homeCollectionView: UICollectionView!
+    
     var homeViewModel: HomeViewModel?
     var videoSubscription: AnyCancellable?
     
@@ -19,6 +21,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         homeViewModel = HomeViewModel()
+        homeViewModel?.fetchVideo()
+        
         videoSubscription = homeViewModel?.dataPublisher
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] _ in

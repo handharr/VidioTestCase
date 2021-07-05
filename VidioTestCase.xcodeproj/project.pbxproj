@@ -20,6 +20,7 @@
 		86478BC62691FF2500BE6591 /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86478BC42691FF2500BE6591 /* VideoCollectionViewCell.xib */; };
 		86478BCA2692038500BE6591 /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86478BC82692038500BE6591 /* DetailVideoViewController.swift */; };
 		86478BCB2692038500BE6591 /* DetailVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86478BC92692038500BE6591 /* DetailVideoViewController.xib */; };
+		868945C826932CAE0018F8FC /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868945C726932CAE0018F8FC /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		86478BC42691FF2500BE6591 /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		86478BC82692038500BE6591 /* DetailVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		86478BC92692038500BE6591 /* DetailVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVideoViewController.xib; sourceTree = "<group>"; };
+		868945C726932CAE0018F8FC /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 		8628BC232690B8E50055A5D6 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				868945C626932C580018F8FC /* New Group */,
+				868945C626932C580018F8FC /* Networking */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -169,11 +171,12 @@
 			path = VideoDetail;
 			sourceTree = "<group>";
 		};
-		868945C626932C580018F8FC /* New Group */ = {
+		868945C626932C580018F8FC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				868945C726932CAE0018F8FC /* APICaller.swift */,
 			);
-			path = "New Group";
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +255,7 @@
 				8628BC312690BD820055A5D6 /* Video.swift in Sources */,
 				8628BC102690A56E0055A5D6 /* AppDelegate.swift in Sources */,
 				86478BCA2692038500BE6591 /* DetailVideoViewController.swift in Sources */,
+				868945C826932CAE0018F8FC /* APICaller.swift in Sources */,
 				8628BC372690DB170055A5D6 /* CollectionSectionHeader.swift in Sources */,
 				8628BC122690A56E0055A5D6 /* SceneDelegate.swift in Sources */,
 				8628BC2E2690BD4E0055A5D6 /* HomeViewModel.swift in Sources */,
