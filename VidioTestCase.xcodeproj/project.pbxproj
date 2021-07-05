@@ -85,6 +85,7 @@
 		8628BC232690B8E50055A5D6 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				868945C626932C580018F8FC /* New Group */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -166,6 +167,13 @@
 				86478BC92692038500BE6591 /* DetailVideoViewController.xib */,
 			);
 			path = VideoDetail;
+			sourceTree = "<group>";
+		};
+		868945C626932C580018F8FC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
