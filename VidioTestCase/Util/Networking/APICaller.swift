@@ -17,9 +17,12 @@ class APICaller {
             return Just([]).eraseToAnyPublisher()
         }
         
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         let publisher = URLSession.shared.dataTaskPublisher(for: url)
             .map({$0.data})
-            .decode(type: [T].self, decoder: JSONDecoder())
+            .decode(type: [T].self, decoder: jsonDecoder)
             .catch { _ in
                 return Just([]).eraseToAnyPublisher()
             }

@@ -13,12 +13,4 @@ struct Video: Codable {
     let description: String
     let releaseDate: String
     let director: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case title
-        case description
-        case releaseDate = "release_date"
-        case director
-    }
 }

@@ -17,6 +17,7 @@ class HomeViewModel {
         let fetchPublisher: AnyPublisher<[Video],Never> = APICaller.shared.fetchVideo()
         
         self.subscription = fetchPublisher.sink { [weak self] videos in
+            
             let top = Array(videos[0...4])
             let others = Array(videos[5...])
             
